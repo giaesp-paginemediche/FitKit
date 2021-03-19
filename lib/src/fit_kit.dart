@@ -1,7 +1,8 @@
-part of fit_kit;
+part of it_paginemediche_fitkit;
 
 class FitKit {
-  static const MethodChannel _channel = const MethodChannel('fit_kit');
+  static const MethodChannel _channel =
+      const MethodChannel('it_paginemediche_fitkit');
 
   /// iOS isn't completely supported by HealthKit, false means no, true means user has approved or declined permissions.
   /// In case user has declined permissions read will just return empty list for declined data types.
@@ -29,9 +30,9 @@ class FitKit {
   /// #### It's not advised to call `await FitKit.read(dataType)` without any extra parameters. This can lead to FAILED BINDER TRANSACTION on Android devices because of the data batch size being too large.
   static Future<List<FitData>> read(
     DataType type, {
-    DateTime dateFrom,
-    DateTime dateTo,
-    int limit,
+    DateTime? dateFrom,
+    DateTime? dateTo,
+    int? limit,
   }) async {
     return await _channel
         .invokeListMethod('read', {
@@ -41,7 +42,8 @@ class FitKit {
           "limit": limit,
         })
         .then(
-          (response) => response.map((item) => FitData.fromJson(item)).toList(),
+          (response) =>
+              response!.map((item) => FitData.fromJson(item)).toList(),
         )
         .catchError(
           (_) => throw UnsupportedException(type),
@@ -52,7 +54,7 @@ class FitKit {
         );
   }
 
-  static Future<FitData> readLast(DataType type) async {
+  static readLast(DataType type) async {
     return await read(type, limit: 1)
         .then((results) => results.isEmpty ? null : results[0]);
   }

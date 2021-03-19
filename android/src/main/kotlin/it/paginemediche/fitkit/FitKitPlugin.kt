@@ -1,4 +1,4 @@
-package com.example.fit_kit
+package it.paginemediche.fitkit
 
 import android.app.Activity
 import android.util.Log
@@ -48,7 +48,7 @@ class FitKitPlugin(private val registrar: Registrar) : MethodCallHandler {
 
         @JvmStatic
         fun registerWith(registrar: Registrar) {
-            val channel = MethodChannel(registrar.messenger(), "fit_kit")
+            val channel = MethodChannel(registrar.messenger(), "it_paginemediche_fitkit")
             channel.setMethodCallHandler(FitKitPlugin(registrar))
         }
     }

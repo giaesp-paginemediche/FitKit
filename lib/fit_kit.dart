@@ -1,4 +1,4 @@
-library fit_kit;
+library it_paginemediche_fitkit;
 
 import 'dart:async';
 

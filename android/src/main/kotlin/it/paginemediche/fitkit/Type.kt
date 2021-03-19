@@ -1,4 +1,4 @@
-package com.example.fit_kit
+package it.paginemediche.fitkit
 
 import com.google.android.gms.fitness.data.DataType
 

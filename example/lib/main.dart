@@ -1,7 +1,6 @@
 import 'dart:async';
-
-import 'package:fit_kit/fit_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:it_paginemediche_fitkit/fit_kit.dart';
 
 void main() => runApp(MyApp());
 

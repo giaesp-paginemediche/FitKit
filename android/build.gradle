@@ -1,4 +1,4 @@
-group 'com.example.fit_kit'
+group 'it.paginemediche.fitkit'
 version '1.0-SNAPSHOT'
 
 buildscript {

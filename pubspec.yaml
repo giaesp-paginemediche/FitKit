@@ -1,10 +1,10 @@
-name: fit_kit
+name: it_paginemediche_fitkit
 description: Flutter plugin for reading health and fitness data. Wraps HealthKit on iOS and GoogleFit on Android.
-version: 1.1.2
-homepage: https://github.com/krokyze/fitkit
+version: 2.0.0
+homepage: https://github.com/giaesp-paginemediche/FitKit
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -16,5 +16,5 @@ dev_dependencies:
 
 flutter:
   plugin:
-    androidPackage: com.example.fit_kit
+    androidPackage: it.paginemediche.fitkit
     pluginClass: FitKitPlugin

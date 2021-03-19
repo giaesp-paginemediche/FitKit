@@ -1,4 +1,4 @@
-part of fit_kit;
+part of it_paginemediche_fitkit;
 
 class FitData {
   final num value;

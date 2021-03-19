@@ -1,4 +1,4 @@
-package com.example.fit_kit
+package it.paginemediche.fitkit
 
 import io.flutter.plugin.common.MethodCall
 import java.util.*

@@ -8,7 +8,7 @@ public class SwiftFitKitPlugin: NSObject, FlutterPlugin {
     private let TAG_UNSUPPORTED = "unsupported";
 
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "fit_kit", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "it_paginemediche_fitkit", binaryMessenger: registrar.messenger())
         let instance = SwiftFitKitPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }

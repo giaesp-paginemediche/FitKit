@@ -1,6 +1,6 @@
-# fit_kit_example
+# it_paginemediche_fitkit_example
 
-Demonstrates how to use the fit_kit plugin.
+Demonstrates how to use the it_paginemediche_fitkit plugin.
 
 ## Getting Started
 
